@@ -35,13 +35,13 @@ Accept: text/html
 Connection: keep-alive
 ```
 ### Explanation:
-GET          → request method
-/example.txt → file path
-HTTP/1.1     → protocol version
-Host         → server address
-User-Agent   → client identity
-Accept       → expected content
-Connection   → connection type
+GET          → request method<br>
+/example.txt → file path<br>
+HTTP/1.1     → protocol version<br>
+Host         → server address<br>
+User-Agent   → client identity<br>
+Accept       → expected content<br>
+Connection   → connection type<br>
 
 # How it works:
 1. Start the server:
