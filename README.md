@@ -26,35 +26,31 @@ Common HTTP methods include:
   PUT / DELETE – modify or remove resources
 _This project focuses on the GET method, which retrieves files without modifying server state._
 
-# Example HTTP GET Request
+## Example HTTP GET Request
+```
 GET /example.txt HTTP/1.1
 Host: localhost
 User-Agent: Chrome/100.0
 Accept: text/html
 Connection: keep-alive
-
+```
 ### Explanation:
-GET → request method
+GET          → request method
 /example.txt → file path
-HTTP/1.1 → protocol version
-Host → server address
-User-Agent → client identity
-Accept → expected content
-Connection → connection type
+HTTP/1.1     → protocol version
+Host         → server address
+User-Agent   → client identity
+Accept       → expected content
+Connection   → connection type
 
 # How it works:
 1. Start the server:
-sudo ./server
+```sudo./server```
 2. Send request from browser/Postman:
-http://localhost/example.txt
+```http://localhost/example.txt```
 3. Server workflow:
 Parses request → ParseRequest
 Checks file existence
 Sends response:
   200 OK + file content (SendResponse)
   404 Page Not Found (SendError)
-
-4. Run server:
-sudo ./server
-5. Open browser, Enter:
-http://localhost/yourfile.txt
