@@ -27,14 +27,5 @@ User-Agent   → client identity<br>
 Accept       → expected content<br>
 Connection   → connection type<br>
 
-# How it works:
-1. Start the server:
-```sudo./server```
-2. Send request from browser/Postman:
-```http://localhost/example.txt```
-3. Server workflow:
-Parses request → ParseRequest
-Checks file existence
-Sends response:
-  200 OK + file content (SendResponse)
-  404 Page Not Found (SendError)
+_To "make"       run in terminal:  "make server"_
+_To "make clean" run in terminal:  "make server_clean"_
