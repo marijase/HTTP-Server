@@ -1,4 +1,4 @@
-# Simple-HTTP-Server-
+# Simple-HTTP-Server
 _A lightweight HTTP server that handles TCP connections and serves text files. The requested file path is provided via an HTTP GET request. If the file exists, the server returns a 200 OK response with its content; otherwise, it responds with 404 Page Not Found._
 
 ## Features
