@@ -28,4 +28,5 @@ Accept       → expected content<br>
 Connection   → connection type<br>
 
 _To "make"       run in terminal:  "make server"_
+
 _To "make clean" run in terminal:  "make server_clean"_
